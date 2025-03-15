@@ -1,0 +1,157 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  position: sticky; 
+  top: 0; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background-color: #333; 
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list ul li {
+  margin: 0 1rem;
+}
+
+.nav-list ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px; 
+  box-shadow: black;
+  display: block; 
+  margin: 0 auto 1rem; 
+}
+
+.featured-image {
+  width: 100%; 
+  max-width: 100%; 
+  border-radius: 8px; 
+  margin-bottom: 1rem; 
+}
+
+figure img, .logo img{
+  width: 150px;
+  height: auto;
+  object-fit: initial;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline;
+  margin: 0;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#content {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  min-width: 250px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 1rem;
+  background-color: white; 
+  border-radius: 8px;
+  box-shadow: black;
+}
+
+.profile-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.profile-card table th, .profile-card table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.profile-card table th {
+  background-color: #f4f4f4;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-list ul {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  main {
+      flex-direction: column;
+  }
+}
